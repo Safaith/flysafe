@@ -1,0 +1,85 @@
+body{
+    margin: 20;
+    padding: 0;
+    background-color: black;
+    background-position: center;
+    font-family: sans-serif;
+
+}
+nav {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+  
+.nav__logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: blanchedalmond;
+}
+  
+
+.logname form{
+    text-align: center;
+}
+
+.logname p{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.logname input{
+    width: 20%;
+    margin-bottom: 25px;
+}
+
+.logname input[type="text"],input[type="email"],input[type="username"], input[type="password"] {
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 1px solid #fff;
+    height: 40px;
+    color: #fff;
+    font-size: 15px;
+
+}
+
+.logname input[type="submit"]{
+    border: none;
+    outline: none;
+    background: orangered;
+    height: 35px;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 20px;
+}
+
+.logname input[type="submit"]:hover {
+    cursor: pointer;
+    background: burlywood;
+    color: #000;
+}
+
+.logname a{
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 20px;
+    color: darkgray;
+}
+
+.logname a:hover {
+    color: bisque;
+}
+
+h1{
+    color: aliceblue;
+    text-align: center;
+    padding: 0 0 20px;
+    font-size: 25px;
+}

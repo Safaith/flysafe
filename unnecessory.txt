@@ -1,0 +1,20 @@
+$duplicate = mysqli_query($connect, "SELECT * FROM flightbook WHERE cabin = '$cabin' ");
+if(mysqli_num_rows($duplicate) > 0){
+            echo
+            "<script> alert('Already Booked'); </script>";
+        } else {
+            $query = "INSERT INTO flightbook VALUES('','$from','$to','$departure_date','$return_date','$adult','$child','$infant','$cabin')";
+            mysqli_query($connect,$query);
+            echo
+            "<script> alert('Flight booking Successfull'); </script>";
+        }
+        $_SESSION["flightid"] = row["flightid"];
+        $_SESSION["from"] = row["fromcity"];
+        $_SESSION["to"] = row["tocity"];
+        $_SESSION["departure_date"] = row["departuredate"];
+        $_SESSION["return_date"] = row["returndate"];
+        $_SESSION["adult"] = row["adult"];
+        $_SESSION["child"] = row["child"];
+        $_SESSION["infant"] = row["infant"];
+        $_SESSION["cabin"] = row["cabin"];
+        background: #0D6EFD;
